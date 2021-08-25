@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-Security-Policy">
+    
+    <title>Airline reservation</title>
+
+<!-- importing typed.js -->
+    <script src="typed.js-master/lib/typed.min.js"></script>
+
+
+<!-- font links -->
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<!-- flaticon moudle -->
+<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+
+
+<!--  font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<body >
+
+
+
+    <!-- navbars -->
+        <!-- navbars div -->
+        <div class="background">
+        <div class="main-navbar">
+            <div class="main-navbar__section">
+                <h1 class="main-navbar__heading">BOOK <span style="color: rgb(251, 75, 11);"> MY</span> FLIGHT</h1>
+                
+            </div>
+            <i class="flaticon-departure"></i>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#serives">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#Login">Login</a></li> -->
+            </ul>
+        </div>
+        <!-- centre text started -->
+        <div class="welcome__page">
+            <div class="welcome-page__text">
+                <p class="welcome-text__big">WELCOME TO <br>BOOK <span style="color: rgb(251, 75, 11);">MY</span> FLIGHT</p>
+                <!-- <p class="welcome-text__small">We saves your time both while purchasing,the check in and during the travel</p> -->
+                <div class="right_background__header">
+                <h4 class="planning-text__header">What are you planning next?</h4>
+                <h1 class="typing_locations"></h1>
+                <div class="buttons">
+                    <button id= "sign-up-Btn" class="btn-sign">Sign Up</button>
+                    <button id ="sign-in-Btn" class="btn-sign">Sign in</button>
+                </div>
+                
+                </div>
+                <p class="welcome-text__small">Book a flight with Book My Flight for more choice, flexibility and even better journeys. <br> Find our best value fares to destinations around the world and change your flight for free if you need to.<br>Explore the world with confidence and total peace of mind. .</p>
+            </div>
+        </div>
+        </div>
+    
+<!------------------------------------Sign Up modal ---------------------------------------------->
+
+<div class="modal-bg signup">
+<div class = "signup-modal">
+    <a class="sign-up-close-link modal-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
+    <div>
+        <h1 class="sign-up-heading">Sign Up</h1>
+    </div>
+    
+    <form class="needs-validation" action="/sign_up" method="POST"  novalidate>
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control " placeholder="First name" name="fname" required>
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+            <input type="email" class="form-control " placeholder="Email" name="email" required>
+            </div>
+            
+        </div>
+        <div class="form-row"><div class="col">
+            <input type="password" class="form-control" placeholder="password" name="password" required>
+            </div>
+        </div>
+        <div class="form-row"><div class="col">
+            <input type="password" class="form-control" placeholder="confirm password" name="cpassword" required>
+            </div>
+        </div>
+            <button type="submit"  class="btn btn-dark signup_btn_booking signup_signin_btn">Sign Up</button>
+        <div>
+            <label for="already-member" class="already-member">Already a member? <button type="button" class="btn btn-link sign-in-switch">Sign in</button></label>
+            
+        </div>
+    </form>
+
+</div>
+</div>
+
+
+<!-- ----------------------------------------Sign in modal-------------------- -->
+<div class="modal-bg signin" id="signinclick">
+<div class = "signup-modal">
+    <a class="sign-in-close-link modal-close-link"><i class="fa fa-times" id="sign-up-close"></i></a>
+    <div>
+        <h1 class="sign-up-heading">Sign In</h1>
+    </div>
+    <form class="needs-validation2" action="/sign_up" method="POST" novalidate>
+        <div class="form-row">
+        <input type="email" class="form-control " placeholder="Email" required>
+        </div>
+
+        <div class="form-row">
+            <input type="password" class="form-control " placeholder="password" required>
+        </div>
+        <button type="submit"  class="btn btn-dark signup_btn_booking signup_signin_btn">Sign In</button>
+        <div>
+            <label for="already-member" class="already-member">Not a member? <button type="button" class="btn btn-link sign-up-switch">Sign Up</button></label>
+            
+        </div>
+</form>
+    </div>
+</div>
+
+    <!--------------------------- Travel Destinations --------------------------------->
+
+<div class="travel-destinations">
+    <div class="travel-destinations__header">
+        <h1 class="travel-destination__heading">TOP TRAVEL DESTINATIONS</h1>
+        <button class="btn-browse_all">Browse All</button>
+    </div>
+    
+    <div class="travel-destinations__box container ">
+        <div class="travel-destination__row row">
+            <a href=" " class="travel-destination__link">
+            <div class="travel-destination__element col">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="Dellhi_img.jpg" alt="Delhi"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">Mumbai</h1>
+                    <h1 class="travel-destination__right-text">New delhi</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="bandra1">Chatrapati Shivaji Airport</h5>
+                    <h5 class="NDLS1">IGI Airport<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">3999&#8377</span></h3>
+                </div>
+                </a>
+                
+                
+            </div>
+            <div class="travel-destination__element col">
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="mumbai_img3.jpg" alt="Mumbai"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">Banglore</h1>
+                    <h1 class="travel-destination__right-text">Mumbai</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    
+                </div>
+                   <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">2699&#8377</span></h3>
+                </div> 
+                </a>
+            </div>
+
+
+            <div class="travel-destination__element col">
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="chennai_img.jpg" alt="Mumbai"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">New Delhi</h1>
+                    <h1 class="travel-destination__right-text">Chennai</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="Hazrat">IGI Airport</h5>
+                    <h5 class="chennaicentral">Chennai Airport<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">2999&#8377</span></h3>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- TRAVEL destination 2nd column -->
+    <div class="travel-destinations__box container ">
+        <div class="travel-destination__row row">
+            <a href="" class="travel-destination__link">
+            <div class="travel-destination__element col">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="Howrah-Bridge.jpg" alt="KOLKATA"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text chennai_fix1">Chennai</h1>
+                    <h1 class="travel-destination__right-text kolkata_fix">Kolkata</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="Egmore">Egmore</h5>
+                    <h5 class="Shalimar">Shalimar RS<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">2635&#8377</span></h3>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="travel-destination__element col">
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="SOMNATH.jpg" alt="GUJRAT"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text">New Delhi</h1>
+                    <h1 class="travel-destination__right-text">GUJRAT</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="NDLS2">Indira Gandhi International Airport</h5>
+                    <h5 class="Ahmedabad">Ahmedabad<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">4589&#8377</span></h3>
+                </div>
+                </a>
+            </div>
+
+
+            <div class="travel-destination__element col">
+                <a href="" class="travel-destination__link">
+                <div class="travel-destination__image_conatiner">
+                    <img class="travel-destination__element__image" src="kerala3.jpg" alt="KERALA"> 
+                </div>
+                <div class="travel-destination__element__heading">
+                    <h1 class="travel-destination__left-text chennai_fix2">Chennai</h1>
+                    <h1 class="travel-destination__right-text">Kerala</h1>
+                </div>
+                <div class="travel-destination__element__stations">
+                    <h5 class="chennai-central">Chennai Aiport</h5>
+                    <h5 class="Trivandrum" >Trivandrum 	<h5>
+                </div>
+                <div class="travel-destination__element__text_price">
+                    <h3 class="travel-destination__element__from-text">From <span class="travel-destination__element__price">3678&#8377</span></h3>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+</div>
+
+
+
+
+    <!-- -------------------------Middle image----------------------------------------------------- -->
+
+
+
+
+
+    <div class="advantages_section">
+        <div class="advantages_image">
+            <div class="">
+                    <h1 class="E_ticket_text">Why Book With Us?</h1>
+            </div>
+            <div class="container">
+                
+                <div class="row">
+                    
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-globe"></i></div>
+                            <p>All you need is internet to book your tickets.Book tickets anyhwere form Inida just from your phone</p>
+                        </div>
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-flash"></i></div>
+                            <p>With us you can book tickets just with few clicks.now enjoy booking tickets superfast with us</p>
+                        </div>
+                        
+                        <div class="advantages-element col-sm">
+                            <div class="advantages-icon__box"><i class="flaticon-documents"></i></div>
+                            <p>No need to carry those tickets that you always misplace, now you can carry your ticket in your mobile phone</p>
+                        </div>
+                </div>
+            </div>
+            </div>
+        
+    </div>
+<div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Our Team </h2>
+                <p class="text-center">Let us Introduce you to our team and they have to say below. </p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">We aim at making airline booking cashless and efficient. We are trying to give a live reporting which is updated by Airline Companies
+                            so that customers get live Flights checking, Available seats, Pricings</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="WhatsApp Image 2021-04-26 at 22.16.32.jpeg">
+                        <h5 class="name">Dev Awasthi</h5>
+                        <p class="title">Web Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">I have made a huge profit while travelling with book my flight and selling my special tea.Very friendly staff and well sanitized washrooms</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="WhatsApp Image 2021-04-27 at 12.05.20.jpeg">
+                        <h5 class="name">Lavesh Topani</h5>
+                        <p class="title">Software Design</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">With book my flight it is very easy to carry my luggage from Delhi to chennai at a very cheap price.Thanks for making my journey fun and enthusiastic</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="WhatsApp Image 2021-04-29 at 23.27.40.jpeg">
+                        <h5 class="name">Shivam Handa</h5>
+                        <p class="title">Buisness Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Ticket Booking</a></li>
+                            <li><a href="#">Luxury Vacations</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3 style= "color :rgb(251, 75, 11)";>Book My Flight</h3>
+                        <p>We save your time both while purchasing,<br> check in and during the travel.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">BookMyflight © 2021</p>
+            </div>
+        </footer>
+    </div>
+    
+
+
+
+</body>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+</html>
