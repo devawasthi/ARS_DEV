@@ -1,0 +1,184 @@
+@import "style.css";
+:root {
+    --brand-color: rgb(251, 75, 11);
+}
+.main-navbar {
+    /* width: 100%;
+    height: 52px; */
+    background-color: rgba(32, 32, 26, 0.5);
+    /* position: fixed;
+    top: 0;
+    z-index: 100; */
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgb(236, 17, 17);
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+
+
+.background-booking{
+    
+    background: rgba(0, 0, 0, 0.4)url(airport.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: darken;
+    border-bottom: 10px solid rgb(251, 75, 11);
+    position: relative;
+    /* top: -200px; */
+    height:50vh;
+    /* margin-top: 10px; */
+    padding-top: 1px;
+    box-sizing: content-box;
+}
+
+
+.form-background{
+    background: rgba(0, 0, 0, 0.513);
+    position: absolute;
+    bottom: 0%;
+    left:15%;
+    width:70%;
+    height:200px;
+}
+
+.col-form-label{
+    color: white;
+    margin-left: 10px;
+}
+
+.search-tickets-btn {
+    background: var(--brand-color);
+    color: white;
+    border: 0;
+    width: 20%;
+    margin-top: 20px;
+}
+.search-tickets-btn:hover {
+    background: white;
+    color: rgb(251, 75, 11);
+    border: 0;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.input_group_icons{
+    font-size:20px;
+    color:rgb(251, 75, 11);
+    background-color: white;
+    border: none;
+}
+
+.train_forms {
+    border: none;
+}
+/* .location_marker:active,
+.location_marker:focus {
+    border: 2px solid chartreuse !important;
+    outline: none !important;
+} */
+
+/* **********************************   train details ****************************************/
+
+
+
+.train_timing_row{
+    margin: 0;
+}
+
+.train_icon_column{
+    padding: 70px 0px 0px 0px;
+    text-align: center;
+}
+
+.train_icon_backgorund{
+    display: inline-block;
+        background: rgb(70, 89, 146);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+}
+
+.flaticon-departure{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.train_number{
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+.train_name{
+    margin:0;
+}
+
+/* train timing column */
+
+
+.train_timing_column{
+     padding: 80px 0px 80px 0px;
+     /* height:100%; */
+     /* background-color: violet; */
+     border-right:1px dashed rgb(199, 198, 198);
+     border-left:1px dashed rgb(199, 198, 198);
+     
+}
+.train_timing_column div>*{
+    margin: 0;
+    
+}
+.train_station_place{
+    font-weight: bold;
+    /* font-size: large; */
+    margin-top: 4%;
+}
+
+.train-time {
+    font-size: xx-large;
+}
+/* .train_station_name{
+
+} */
+
+/* train price column */
+.train_price_column{
+         padding: 80px 0px 80px 0px;
+         text-align: center;
+
+}
+.train_book_btn{
+    background: var(--brand-color);
+    font-weight: bold;
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+}
+.train_book_btn:hover {
+    
+    background: rgb(255, 255, 255);
+    color: rgb(251, 75, 11);
+    border: 1px solid rgb(251, 75, 11);
+    margin-top: 20px;
+}
+
+
+.train_container{
+    display: none;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgb(236, 17, 17);
+    opacity: 1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}

@@ -1,0 +1,68 @@
+@import "style.css";
+
+
+/* clearing styles */
+.form-row {
+    /* width:400px; */
+    margin-top: 15px;
+    text-align: unset;
+} 
+
+
+.background-payment{
+
+    background: rgba(0, 0, 0, 0.4)url(payment-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border-bottom: 10px solid rgb(251, 75, 11);
+    position: relative;
+    height: 50vh;
+    padding-top: 1px;
+    box-sizing: content-box;
+}
+
+
+.form-payment-background {
+    
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+    width: 70%;
+    height: 200px;
+}
+
+.payment_train_quote {
+    color: rgba(255, 255, 255, 0.787);
+    font-family: 'Courgette', cursive;
+    font-size: 4.5rem;
+
+}
+
+
+.payment_header_container{
+    width: 800px;
+    border-radius: 0;
+}
+.payment_container{
+    width: 800px;
+}
+
+.submit_payment_btn{
+    position: relative;
+    left:60%;
+    background: var(--brand-color);
+    border: 0;
+    width: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.submit_payment_btn:hover{
+    background: white;
+    background-color: white ;
+    color: rgb(251, 75, 11) ;
+    border: 1px solid rgb(251, 75, 11) ;
+    outline: none;
+}

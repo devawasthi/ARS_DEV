@@ -1,0 +1,793 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.typed-cursor{
+    opacity: 0;
+}
+
+:root{
+--brand-color: rgb(251, 75, 11);
+}
+
+/* @color-primary :rgb(251, 75, 11) ; */
+
+.main-navbar{
+    width:100%;
+    height: 52px;
+    background-color: rgba(32, 32, 26, 0.7);
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+
+.main-navbar__section{
+    /* width:30%; */
+    display: inline-block;
+    margin: 7px 10px 3px 0px;
+    margin-left: 2%;
+    vertical-align:top;
+}
+.main-navbar__heading{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+
+
+.nav-list{
+    
+    list-style-type: none;
+    display: flex;
+    /* margin-top:10px; */
+    float: right;
+    /* text-align: right; */
+    margin: 0;
+    margin-right: 3%;
+    
+    
+}
+
+.nav-list li a{
+    display: inline-block;
+    transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px 13px 20px;
+    margin-right: 0px;
+    opacity: 1;
+    
+    
+}
+.nav-list li a:hover,
+.nav-list li a:active {
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.5)url(airplane.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    /* height: 900px; */
+    height: 100vh;
+    border-bottom: 10px solid rgb(251, 75, 11) ;
+    /* position: relative; */
+    /* top: -200px; */
+    z-index: -100;
+    /* margin-top: 10px; */
+    padding-top: 1px;
+    box-sizing: content-box;
+    
+}
+
+
+.welcome__page{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.welcome-text__big{
+    font-family:'Train One',cursive;
+    text-align: left;
+    font-size: 400%;
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.welcome-text__small{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+    position: relative;
+    left: 80px;
+}
+
+.right_background__header{
+
+    background:rgba(0, 0, 0, 0.294);
+    position: relative;
+    top:100px;
+    /* border: 3px white solid; */
+    border-right: none;
+    padding: 100px 120px 158px 120px;
+    float: right;
+    top: 200px;
+
+}
+.planning-text__header {
+    
+
+    margin-left:30px;
+    font-size: 2.5rem;
+    display: block;
+    text-align: right;
+    /* background: */
+    /* position: relative; */
+    /* left: 200px; */
+    /* bottom: 148px; */
+}
+
+.typed-cursor{
+    visibility: hidden;
+}
+
+/* typing text */
+.typing_locations{
+    display: inline-block;
+    color: rgb(251, 75, 11);
+    text-align: center;
+    font-size: 4.5rem;
+    margin-left: 10px;
+    position: relative;
+    /* bottom:44px; */
+    /* top:30px; */
+    left:30px;
+}
+
+.typing_locations::after{
+    content: '';
+    height: 100%;
+    padding: 2px;
+    margin-left: 10px;
+    background-color: rgb(251, 75, 11);
+    animation: typing 1.2s ease infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.buttons{
+    text-align: center;
+} 
+.btn-sign{
+    transition: all .2s ease;
+    font-weight: bold;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    margin: 20px;
+      
+    
+      }
+      
+
+.btn-sign:hover {
+     color: rgb(0, 0, 0);
+     background-color: rgba(255, 255, 255, 0.918);
+}
+
+
+/*************************************  TRAVEL DESTINATIONS *****************************************/
+.travel-destinations{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    
+}
+.travel-destination__heading{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    font-family: serif;
+}
+.btn-browse_all{
+    transition: all .2s ease;
+    font-weight: 600;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    float: right;
+    position: relative;
+    right:200px;
+    }
+
+.btn-browse_all:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.918);
+    }
+
+.travel-destinations__header{
+    margin-bottom: 50px;
+}
+.travel-destinations__box{
+    /* margin-top: 100px; */
+    padding :0;
+}
+/* .travel-destination__row{
+    
+} */
+.travel-destination__element{
+    text-align: center;
+    margin: 45px; 
+    /* border:1px solid rgb(212, 211, 211); */
+    border-top: none;
+    padding:0;
+}
+
+/* .travel-destination__element p{
+    display: inline-block;
+    width: 50%;
+    color: tomato;
+    text-align: center;
+} */
+
+.travel-destination__element__image{
+    width:100%;
+    height: 280px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.travel-destination__element__heading{
+    border:1px solid rgb(212, 211, 211);
+    border-bottom: none;
+}
+
+.travel-destination__element__heading h1{
+margin: 10px;
+color: rgb(36, 35, 35);
+font-size: 1.4rem;
+display: inline-block;
+font-weight: normal;
+font-family: 'Mukta',sans-serif;
+margin-bottom: 0px;
+text-decoration: none;
+}
+
+
+.travel-destination__right-text{
+    position: relative;
+    left: 36px;
+    
+}
+.travel-destination__left-text{
+    
+    position: relative;
+    right: 36px;
+}
+/* tempry fixing the postion */
+.chennai_fix1{    
+    position: relative;
+    right: 50px;
+}
+.chennai_fix2{
+    position: relative;
+    right: 56px;
+}
+.kolkata_fix{
+    position: relative;
+    left: 48px;
+}
+
+.travel-destination__element__stations{
+    border:1px solid rgb(212, 211, 211);
+    border-top: none;
+
+}
+
+.travel-destination__element__text_price{
+    border:1px solid rgb(212, 211, 211);
+    border-top: none;
+    border-bottom: 1.3px solid rgb(212, 211, 211);
+}
+
+.travel-destination__element__stations h5{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    /* margin-top: 0px; */
+}
+  /* fixing postions railway station names */
+.bandra1{
+    position: relative;
+    right: 70px;
+}
+
+.NDLS1{
+    position: relative;
+    left:40px;
+}
+
+.SBC{
+    position: relative;
+    right: 70px;
+
+}
+.MMCT{
+    position: relative;
+    left:80px;
+
+}
+.Hazrat{
+    position: relative;
+    right: 20px;
+
+}
+.chennaicentral{
+    position: relative;
+    left:25px;
+
+}
+
+.Egmore{
+position: relative;
+right: 65px;
+}
+
+.Shalimar{
+position: relative;
+left:73px;
+}
+
+.NDLS2{
+position: relative;
+right: 20px;
+}
+.Ahmedabad{
+position: relative;
+left:60px;
+}
+
+.chennai-central{
+position: relative;
+right: 30px;
+}
+
+.Trivandrum{
+    position: relative;
+    left:30px;
+}
+
+
+.travel-destination__element__from-text{
+    font-size: 1rem;
+    /* vertical-align: top; */
+    
+    color: black;
+}
+.travel-destination__element__price{
+        font-size: 2rem;
+        color: rgb(251, 75, 11);
+        
+
+}
+
+
+/* creating that box a link */
+.travel-destination__link{
+text-decoration: none;
+list-style-type: none;
+
+}
+.travel-destination__link:hover{
+text-decoration: none;
+list-style-type: none;
+box-shadow: 10px 10px 5px grey;
+}
+.travel-destination__element:hover{
+
+    transition: all 0.15s cubic-bezier(0.4, 0, 1, 1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), */
+    /* 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* *****************************************advantages************************************/
+
+.advantages_image{
+    background: rgba(255, 75, 9, 0.657)url("download.jpg");
+    background-size: cover;
+    background-position:10px;
+    background-blend-mode: lighten;
+    height: 500px;
+    /* border-bottom: 8px solid rgba(251, 75, 11, 0.623); */
+    z-index: -100;
+    padding-top: 1px;
+    box-sizing: content-box;
+
+}
+
+.E_ticket_text{
+    color: rgb(255, 255, 255);
+    font-family: 'Karla',sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 31px;
+    margin-bottom: 60px;
+}
+
+.advantages-element{
+    text-align: center; 
+
+}
+.advantages-element p{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    width: 60%;
+    position: relative;
+    left: 66px;
+    top: 17px;
+    margin-top: 20px
+}
+
+
+.advantages-icon__box{
+    display: inline-block;
+    background:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+
+}
+.flaticon-departure{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    position: relative;
+    top: -7px;
+}
+.flaticon-airplane{
+    color: rgb(11, 223, 251);
+    font-size: 60px;
+    position: relative;
+    top: 13px;
+
+}
+.flaticon-flash{
+    color: rgb(251, 75, 11);
+    font-size: 60px;
+    position: relative;
+    top: 13px;
+}
+.flaticon-globe{
+    color: rgb(251, 75, 11);
+    font-size: 65px;
+    font-weight: lighter;
+    position: relative;
+    top: 7px;
+}
+
+.flaticon-documents{
+    color: rgb(251, 75, 11);
+    font-size: 74px;
+    position: relative;
+    top: 3px;
+}
+
+
+
+/***************************TEstimonials *********************************************/
+.testimonials-clean {
+    color: #313437;
+    background-color: #eef4f7;
+}
+
+.testimonials-clean p {
+    color: #7d8285;
+}
+
+.testimonials-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+@media (max-width:767px) {
+    .testimonials-clean h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+.testimonials-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.testimonials-clean .intro p {
+    margin-bottom: 0;
+}
+
+.testimonials-clean .people {
+    padding: 50px 0 20px;
+}
+
+.testimonials-clean .item {
+    margin-bottom: 32px;
+}
+
+@media (min-width:768px) {
+    .testimonials-clean .item {
+        height: 220px;
+    }
+}
+
+.testimonials-clean .item .box {
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.testimonials-clean .item .box:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -24px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-width: 12px 15px;
+    border-top-color: #fff;
+}
+
+.testimonials-clean .item .author {
+    
+    margin-top: 28px;
+    padding-left: 25px;
+}
+
+.testimonials-clean .item .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: inherit;
+}
+
+.testimonials-clean .item .title {
+    font-size: 13px;
+    color: #9da9ae;
+}
+
+.testimonials-clean .item .description {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.testimonials-clean .item img {
+    max-width: 40px;
+    float: left;
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+/******************************* FOOTER STARTS **********************************************/
+
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+
+/* ******************************************  Sign Up modal*************************** */
+
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 1000;
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.signup-modal{
+    /* display: none; */
+    background: white;
+    text-align: center;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top:20%;
+    margin-left: -200px;
+    padding: 15px 40px 20px 40px;
+    border-radius: 10px;
+    border:2px solid var(--brand-color);
+    z-index: 999;
+}
+
+.sign-up-heading{
+    margin-bottom: 20px;
+    font-family: 'Mukta',sans-serif;
+    display: inline-block;
+
+}
+.modal-close-link{
+    position: relative;
+    left: 55%;
+
+}
+#sign-up-close{
+    font-size:30px;
+    color:rgb(0, 255, 255);
+    /* float: right; */
+    
+}
+#sign-up-close:hover {
+    cursor: pointer;
+    /* font-size:20px; */
+    color:rgb(0, 0, 0);
+}
+.form-row{
+    /* width:400px; */
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup_signin_btn{
+    background: var(--brand-color);
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 20px;
+}
+.signup_signin_btn:hover{
+  background: white;
+  color: rgb(251, 75, 11);
+  border: 1px solid rgb(251, 75, 11);
+  /* border-style: inset; */
+}
+
+.already-member{
+    margin-top: 20px;
+}
+.btn-link{
+font-weight: 400;
+color: #007bff;
+background-color: transparent;
+margin: 0;
+padding: 0;
+border: 0;
+position: relative;
+top: -2px;
+right: -2px;
+}
+
+
+

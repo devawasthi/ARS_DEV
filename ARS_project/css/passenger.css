@@ -1,0 +1,87 @@
+@import "style.css";
+@import "booking.css";
+
+
+
+/* clearing styles */
+.form-row {
+    /* width:400px; */
+    margin-top: 15px;
+    text-align: unset;
+}
+
+
+.background-passengers{
+
+    background: rgba(0, 0, 0, 0.4)url(passengers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    border-bottom: 10px solid rgb(251, 75, 11);
+    position: relative;
+    /* top: -200px; */
+    height: 50vh;
+    /* margin-top: 10px; */
+    padding-top: 1px;
+    box-sizing: content-box;
+}
+
+
+.form-passengers-background{
+    /* background: rgba(0, 0, 0, 0.513); */
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+    width: 70%;
+    height: 200px;
+}
+
+.passenger_train_quote{
+    color: rgba(255, 255, 255, 0.787);
+    font-family:'Courgette',cursive;
+    font-size: 4.5rem;
+
+}
+
+/* .passenger_container{
+    position: relative;
+    left: 10%;
+    margin: auto;
+    width: 80%; 
+}*/
+
+/* .passenger_card{
+    width: 80%; */
+    /* padding-left: 10%;
+} */
+
+.passenger_details_heading{
+    font-size: 2rem;
+    font-weight:500;
+    margin-top: 20px;
+}
+
+
+
+.submit_passenger_details_btn{
+    float: right;
+    background: var(--brand-color);
+    border: 0;
+    width: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+
+}
+.submit_passenger_details_btn:hover,
+.submit_passenger_details_btn:active,
+.submit_passenger_details_btn:focus{
+    background: white !important;
+    background-color: white !important;
+    color: rgb(251, 75, 11) !important;
+    border: 1px solid rgb(251, 75, 11) !important;
+    outline: none !important;
+    
+
+}
+
